@@ -1,7 +1,11 @@
+from mcp.tools import mock_search  
+
 def research_agent(state):
-    plan = state["plan"]
+    question = state["question"]
 
-    # Simulated research
-    answer = f"Result based on: {plan}"
+    # Call tool
+    result = mock_search(question)
 
-    return {"answer": answer}
+    return {
+        "answer": result
+    }

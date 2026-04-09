@@ -1,6 +1,6 @@
 def planner_agent(state):
     question = state["question"]
 
-    plan = f"Search and summarize about: {question}"
-
-    return {"plan": plan}
+    return {
+        "plan": f"Find capital city of country in: {question}"
+    }
