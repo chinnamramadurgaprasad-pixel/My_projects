@@ -1,0 +1,7 @@
+Django
+djangorestframework
+python-dotenv
+langchain
+langgraph
+openai
+psycopg2-binary
